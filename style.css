@@ -48,6 +48,7 @@ img{
 
 .flex{
     display:flex;
+    flex-wrap: wrap;
     align-items:center;
 }
 
@@ -73,6 +74,8 @@ nav{
     margin-bottom: 40px;
     align-items: center;
 }
+
+
 
 .box{
     background-color: white;
@@ -128,4 +131,30 @@ footer .circle{
      
 }
 
- 
+ footer p{
+     text-align: right;
+ }
+
+ @media screen and (max-width: 768px){
+
+    nav.flex{
+        flex-direction: row;
+    }
+    .flex{
+        flex-direction: column;
+    }
+
+    .box-reverse-mobile.flex{
+        flex-direction: column-reverse;
+    }
+
+    footer ul {
+        padding: 0;
+        width: 100%;
+
+    }
+    footer p{
+        text-align: center;
+    }
+   
+ }
