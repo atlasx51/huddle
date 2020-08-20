@@ -1,13 +1,21 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
-</style>
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+
+* {box-sizing: border-box;
+}
 
 body {
-    color: hsl(192, 100%, 9%)
+    color: hsl(192, 100%, 9%);
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
     margin: 0;
 
+
+}
+
+p{
+    opacity: 0.6;
 }
 
 h1, h2{
@@ -48,11 +56,12 @@ img{
 
 .flex{
     display:flex;
-    flex-wrap: wrap;
     align-items:center;
+    justify-content: space-between;
 }
 
-.flex > div{
+.flex > div,
+.flex > ul {
     flex: 1;
 }
 
@@ -68,6 +77,10 @@ header{
     padding: 40px 0;
 }
 
+.header-img{
+
+    width: 80%;
+}
 
 nav{
     justify-content: space-between;
@@ -142,6 +155,9 @@ footer .circle{
     }
     .flex{
         flex-direction: column;
+    }
+    .header-img{
+        margin-top: 40px;
     }
 
     .box-reverse-mobile.flex{
